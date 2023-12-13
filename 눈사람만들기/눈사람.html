@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #87CEEB; /* 하늘색 배경 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .snowman {
+            width: 100px;
+            height: 200px;
+            position: relative;
+        }
+
+        .body {
+            width: 100px;
+            height: 100px;
+            background-color: #ffffff; /* 흰색 몸체 */
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .head {
+            width: 80px;
+            height: 80px;
+            background-color: #ffffff; /* 흰색 머리 */
+            border-radius: 50%;
+            position: absolute;
+            top: -80px;
+            left: 10px;
+        }
+
+        .eye {
+            width: 10px;
+            height: 10px;
+            background-color: #000000; /* 검은색 눈동자 */
+            border-radius: 50%;
+            position: absolute;
+            top: 30px;
+            left: 25px;
+        }
+
+        .nose {
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 15px solid #FFA500; /* 주황색 코 */
+            position: absolute;
+            top: 45px;
+            left: 35px;
+        }
+    </style>
+</head>
+<body>
+    <div class="snowman">
+        <div class="body"></div>
+        <div class="head">
+            <div class="eye"></div>
+            <div class="eye" style="left: 45px;"></div>
+            <div class="nose"></div>
+        </div>
+    </div>
+</body>
+</html>
