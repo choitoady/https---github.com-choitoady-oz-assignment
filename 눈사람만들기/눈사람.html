@@ -20,15 +20,46 @@
         }
 
         .body {
-            width: 100px;
-            height: 100px;
+            width: 120px;
+            height: 120px;
             background-color: #ffffff; /* 흰색 몸체 */
             border-radius: 50%;
             position: absolute;
-            bottom: 0;
-            left: 0;
+            bottom: 40%;
+            left: -10%;
+            z-index: 1;
         }
 
+        .body.lower { /* 추가된 하단 몸체 스타일 */
+            width: 120px;
+            height: 120px;
+            background-color: #ffffff; /* 흰색 몸체 */
+            border-radius: 50%;
+            position: absolute;
+            bottom: -30px; /* 두 번째 몸체는 아래로 내림 */
+            left: -10px; /* 가운데 위치하도록 조절 */
+        }
+        .body::before {
+            content: ''; /* 가상 요소에는 반드시 content 속성이 필요합니다. */
+            width: 10px;
+            height: 10px;
+            background-color: #000000; /* 검은색 단추 */
+            border-radius: 50%;
+            position: absolute;
+            top: 10%;
+            left: 55px; /* 몸체 중간에 위치하도록 조절 */
+}
+
+         .body::after {
+            content: '';
+             width: 10px;
+             height: 10px;
+             background-color: #000000;
+             border-radius: 50%;
+             position: absolute;
+             top: 45px;
+             left: 55px; /* 몸체 중간에 위치하도록 조절 */
+}
         .head {
             width: 80px;
             height: 80px;
@@ -37,6 +68,7 @@
             position: absolute;
             top: -80px;
             left: 10px;
+            z-index: 2;
         }
 
         .eye {
@@ -59,16 +91,39 @@
             top: 45px;
             left: 35px;
         }
+        .arm {
+            width: 10px;
+            height: 50px;
+            background-color: #8B4513; /* 갈색 팔 */
+            position: absolute;
+            z-index: 0;
+           
+        }
+
+        .arm.left {
+            top: 5px;
+            left: -30px;
+            transform: rotate(-60deg);
+        }
+
+        .arm.right {
+            top: 5px;
+            right: -30px;
+            transform: rotate(60deg);
+        }
     </style>
 </head>
 <body>
     <div class="snowman">
         <div class="body"></div>
+        <div class="body lower"></div>
         <div class="head">
             <div class="eye"></div>
             <div class="eye" style="left: 45px;"></div>
             <div class="nose"></div>
         </div>
+        <div class="arm left"></div>
+        <div class="arm right"></div>
     </div>
 </body>
 </html>
