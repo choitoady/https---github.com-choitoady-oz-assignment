@@ -1,0 +1,53 @@
+.chat-screen-texts{
+   padding: 0; 
+   list-style-type: none;
+
+}
+.chat-screen-texts >.text1{
+    background-color: darkseagreen;
+    width: 280px;
+    height: 50px;
+    margin: 0 0 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    line-height: 30px;
+    position: relative;
+    left: 20px;
+}
+.chat-screen-texts >.text1::after{
+     content: "";
+     border-right: 16px solid darkseagreen;
+     border-bottom: 16px solid transparent;
+     position: absolute;
+     top: 10px;
+     left: -10px;
+}
+.chat-screen-texts >.text1:hover{
+  background-color: blanchedalmond;
+  transition: background-color 1500ms 200ms ease-in;
+}
+.chat-screen-texts >.text1:hover::after{
+ border-right: 16px solid blanchedalmond;  
+ transition: border-right 1500ms 200ms ease-in;
+}
+
+.chat-screen-texts >.text2{
+    background-color: darkseagreen;
+    width: 280px;
+    height: 50px;
+    margin: 0 0 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    line-height: 30px;
+    position: relative;
+    left: 1420px;
+}
+
+.chat-screen-texts >.text2::after{
+    content: "";
+    border-left: 16px solid darkseagreen; /* 변경: border-right에서 border-left로 수정 */
+    border-bottom: 16px solid transparent; /* 변경: border-bottom에서 border-top으로 수정 */
+    position: absolute;
+    top: 10px;
+    right: -10px; /* 변경: left에서 right로 수정 */
+}
