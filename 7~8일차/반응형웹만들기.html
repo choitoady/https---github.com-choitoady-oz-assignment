@@ -4,51 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+  
     <style>
         body {
-            margin: 0;
+            margin: auto;
             display: flex;
             align-items: center;
             justify-content: center;
             height: 100vh;
             text-align: center;
             background-color: antiquewhite;
+            
         }
 
         .hi {
             margin: 0;
-            border: 3px solid black;
-            width: 100px;
-            height: 40px;
-            padding-top: 20px;
-            box-sizing: content-box;
-            color: white; /* 기본 텍스트 색상 */
-            background-color: royalblue; /* 기본 배경색 */
+            color: rgb(17, 16, 16);
+            font-size: 3em;
+           
         }
-
+        div{
+            display : none;
+        }
         /* 미디어 쿼리를 사용하여 화면 크기에 따라 스타일 변경 */
         @media screen and (min-width: 601px) and (max-width: 900px) {
             body { /* 화면 중간 크기에 대한 텍스트 색상 */
-                background-color: lightgreen; /* 화면 중간 크기에 대한 배경색 */
+                background-color: lightgreen; 
+                font-size: 24px;/*
+                font-size: 1.5em; 화면 중간 크기에 대한 배경색 */
             }
+            .a{
+                display: inherit;
+            }
+            p {
+                display: none;
+            }
+        
+        
         }
-
         @media screen and (min-width: 901px) and (max-width: 1200px) {
             body {
-                color: darkred; /* 큰 화면에 대한 텍스트 색상 */
-                background-color: lightcoral; /* 큰 화면에 대한 배경색 */
+                color: rgb(8, 0, 0); /* 큰 화면에 대한 텍스트 색상 */
+                background-color: lightcoral;
+                font-size: 1.5em; /* 큰 화면에 대한 배경색 */
             }
+        
+            .b{
+                display: inherit;
+            }
+            p {
+                display: none;
+            }
+        
         }
-
         @media screen and (min-width: 1201px) {
             body {
-                color: darkslategray; /* 아주 큰 화면에 대한 텍스트 색상 */
-                background-color: rgb(234, 234, 25); /* 아주 큰 화면에 대한 배경색 */
+                color: rgb(223, 255, 107); /* 아주 큰 화면에 대한 텍스트 색상 */
+                background-color: rgb(233, 12, 12); 
+                font-size: 32px;/* 아주 큰 화면에 대한 배경색 */
             }
+            .c{
+                display: inherit;
+            }
+            p {
+                display: none;
+            }
+        
         }
     </style>
 </head>
 <body>
-   <p class="hi">안녕하세요!</p>
+   <p class="hi">반가워요</p>
+        <div class="a">최오늘이에요</div>
+        <div class="b">저는</div>
+        <div class="c">안녕하세요</div>
 </body>
 </html>
