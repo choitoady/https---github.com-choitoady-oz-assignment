@@ -1,0 +1,46 @@
+.about{
+    font-family: "Noto Serif KR", serif;
+    text-align: center;
+    display: inline-flex;
+    gap: 1em;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.about__card{
+    font-family: "Noto Serif KR", serif;
+    padding: 58px;
+    margin: 50px;
+    text-align: center;
+    color: white;
+    background-color: rgba(111, 13, 124, 0.644);
+    border-radius: 40px;
+    width: 320px;
+    cursor: pointer;
+    transition: all 350ms;
+}
+
+.about__card a{
+    font-family: "Noto Serif KR", serif;
+    text-align: center;
+    text-decoration: none;
+}
+.about__card i{
+ font-size: 250px;
+ text-align: center;
+ color: white;
+}
+
+.about__title{
+    font-family: "Noto Serif KR", serif;
+    text-align: center;
+    margin-top: 0.6em;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(83, 167, 223);
+}
+.about__text{
+    font-family: "Noto Serif KR", serif;
+    text-align: center;
+    color: white;
+}

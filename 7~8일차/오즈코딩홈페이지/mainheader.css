@@ -1,0 +1,33 @@
+main{
+    font-family: "Noto Serif KR", serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#about{
+font-family: "Noto Serif KR", serif;
+padding: 64px 16px;
+text-align: center;
+background-color: rgba(201, 201, 201, 0.404);
+padding-right: 16px;
+grid-column: 1 / -1;
+}
+
+.section__header{
+    font-family: "Noto Serif KR", serif;
+    padding: 64px 16px;
+    text-align: center;
+}
+
+.section__tag{
+    font-family: "Noto Serif KR", serif;
+    text-align: center;
+    font-size: 26px;
+    color: rgba(198, 44, 218, 0.948);
+}
+.section__title{
+    font-family: "Noto Serif KR", serif;
+    text-align: center;
+    font-size: 72px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}

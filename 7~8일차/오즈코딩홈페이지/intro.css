@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    font-family: "Noto Serif KR", serif;
+    width: 100%;
+}
+
+.intro{
+font-family: "Noto Serif KR", serif;
+background-image: url("people-4050698_1280.jpg");
+background-position: center;
+height: 500px;
+background-repeat: no-repeat;
+background-color: black;
+position: relative;
+}
+
+.intro_dark{
+    font-family: "Noto Serif KR", serif;
+    position: absolute;
+    height: 500px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.67);
+}
+
+.intro_type {
+    font-family: "Noto Serif KR", serif;
+    display: flex;
+    gap: 0.32em;
+    font-weight: bold;
+    color: white;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 20px;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 100px);
+    z-index: 999;
+}
+
+.heart,.swim{
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: white;
+    animation: blink;
+    animation-duration: 350ms;
+    animation-iteration-count: infinite;
+}
+.intro_title_flip{
+    font-family: "Noto Serif KR", serif;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    background-color: rgb(61, 66, 54);
+    clip-path: polygon(100% 90%, 100% 100%, 0 100%, 0 0);
+}

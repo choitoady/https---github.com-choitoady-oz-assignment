@@ -1,0 +1,267 @@
+#header__navi{
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    letter-spacing: -0.02em;
+    font-family: 'SamsungOneKorean', Dotum, '돋움', sans-serif;
+    word-break: keep-all;
+    box-sizing: border-box;
+    display: block;
+    font-size: 1.1111vw;
+    position: relative;
+    width: 100%;
+    height: 117px;
+    z-index: 100;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+    transition: background 0.3s;    
+}
+
+.header__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo{
+line-height: 1;
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+letter-spacing: -0.02em;
+font-family: 'SamsungOneKorean', Dotum, '돋움', sans-serif;
+vertical-align: baseline;
+background: transparent;
+word-break: keep-all;
+box-sizing: border-box;
+font-size: 1.1111vw;
+display: flex;
+align-items: center;
+font-weight: 900;
+font-size: 1.4rem;
+}
+
+.utility__wrap{
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    letter-spacing: -0.02em;
+    font-family: 'SamsungOneKorean', Dotum, '돋움', sans-serif;
+    vertical-align: baseline;
+    background: transparent;
+    word-break: keep-all;
+    box-sizing: border-box;
+    font-size: 1.1111vw;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: auto;
+    height: 50px;
+    margin-right: 10px;
+}
+.menu__wrap{
+    line-height: 1;
+    letter-spacing: -0.02em;
+    font-family: 'SamsungOneKorean', Dotum, '돋움', sans-serif;
+    word-break: keep-all;
+    font-size: 1.1111vw;
+    
+}
+.menu__list{
+line-height: 1;
+margin: 0;
+padding: 20px 0 0;
+border: 0;
+outline: 0;
+letter-spacing: -0.02em;
+font-family: 'SamsungOneKorean', Dotum, '돋움', sans-serif;
+vertical-align: baseline;
+background: transparent;
+word-break: keep-all;
+box-sizing: border-box;
+list-style: none;
+font-size: 1.1111vw;
+display: flex;
+width: 100%;
+justify-content: space-between;
+font-weight: 900;
+font-size: 13px;
+}
+
+body> .banner__promotion{
+    background-image: url("christmas-2971961_1280.jpg");
+    display: flex;
+    width: 100;
+    height: 643.78px;
+
+}
+ 
+h1{
+    font-size: 40px;
+}
+.banner__notice{
+  display: inline-block;
+  line-height: 1.5rem;
+  height: 400px;
+}
+
+.bannner_ad{
+    padding: 130px 117px 0;
+    width: 100%
+}
+.banner__list{
+    display: block;
+    height: 64px;
+    position: relative;
+    
+}
+.listmenu{
+    display: flex; 
+    list-style: none;
+    padding: 0;
+}
+
+.listitem{
+    border-bottom: 1px solid white; /* 하얀색 밑줄 추가 */
+    margin-bottom: 10px; /* 원하는 간격 설정 */
+    padding-bottom: 10px; /* 간격과 밑줄 사이의 여백 설정 */
+    justify-content: space-between;
+    display: inline-block;
+    margin: auto;
+    font-weight: 900;
+    justify-content: center;
+    
+}
+
+.menuitem__10 {
+    display: flex;
+    flex: 1; /* 모든 아이템에 동일한 가로 크기 적용 */
+    justify-content: center;
+    
+}
+
+.menuitem__10:nth-child(11) {
+    flex: 2; /* 처음 2개의 아이템에 가로 크기 2배 적용 */
+}
+
+.menuitem__10:nth-child(12) {
+    flex: 2; /* 처음 2개의 아이템에 가로 크기 2배 적용 */
+}
+
+.component-text{
+    display: flex;
+    justify-content: center;
+}
+
+
+.product-list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+
+.galaxy-phone {
+  display: flex;
+  background-color: rgb(180, 180, 180);
+  width: 400px;
+  height: 250px;
+  justify-content: center;
+  border-radius: 20px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+    
+    
+#glaxyphoto {
+    width: 100px;
+    height: 100px;
+}
+
+.recommand_top {
+    display: flex;
+    flex-direction: row;
+    height: 190px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recommand_side {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+
+.recommand_under {
+    display: flex;
+    align-items: flex-end;
+   
+}
+
+p{
+    display: flex;
+    margin: 7px;
+    justify-content: space-between;
+}
+
+.footer-inner{
+    display: flex;
+    border-top: 1px solid rgb(188, 185, 185);
+}
+
+.productline1 {
+    line-height: 2;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    letter-spacing: -0.02em;
+    font-family: 'SamsungOneKorean', Dotum, '돋움', sans-serif;
+    vertical-align: baseline;
+    background: transparent;
+    word-break: keep-all;
+    list-style: none;
+    position: relative;
+    float: left;
+    font-size: 1.273vw;
+    width: 16.6%;
+    padding: 38px 24px 30px;
+    box-sizing: border-box;
+    border-left: 1px solid #d9d9d9;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+li {
+    list-style: none;
+}
+.productline2{
+line-height: 2;
+margin: 0;
+border: 0;
+outline: 0;
+letter-spacing: -0.02em;
+font-family: 'SamsungOneKorean', Dotum, '돋움', sans-serif;
+vertical-align: baseline;
+background: transparent;
+word-break: keep-all;
+list-style: none;
+position: relative;
+float: left;
+font-size: 1.273vw;
+width: 16.6%;
+padding: 38px 24px 30px;
+box-sizing: border-box;
+border-left: 1px solid #d9d9d9;
+height: auto;
+flex-wrap: wrap;
+justify-content: center;
+}

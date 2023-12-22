@@ -1,0 +1,85 @@
+.header{
+    font-family: "Noto Serif KR", serif;
+    display: flex;
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    height: 75px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(7, 6, 7);
+}
+a .header_homelink{
+font-family: "Noto Serif KR", serif;
+display: inline-block;
+padding: 0 24px;
+height: 72px;
+line-height: 72px;
+cursor: pointer;
+text-decoration: none;
+}
+.header_logo{
+font-family: "Noto Serif KR", serif;
+line-height: 72px;
+cursor: pointer;
+height: 48px;
+vertical-align: middle;
+font-size: 60px;
+color: white;
+}
+.menulist .header_menu_btn{
+display: flex;
+all: unset;
+width: 72px;
+height: 72px;
+background-image: url("pngwing.com.png");
+background-size: 50%;
+background-repeat: no-repeat;
+background-position: center;
+cursor: pointer;
+background-color: rgb(216, 218, 112);
+}
+
+.header_nav_item{
+    font-family: "Noto Serif KR", serif;
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
+}
+.header_nav_item a{
+font-family: "Noto Serif KR", serif;
+font-size: 20px;
+display: inline-block;
+height: 72px;
+line-height: 72px;
+color: white;
+text-decoration: none;
+padding: 0 0.8em;
+}
+
+
+@media screen and (max-width: 768px ){
+    
+    .header_nav_item{
+             display: none;
+    }
+    .hamburger{
+              display: flex; 
+              color: white;
+              font-size: 32px;
+    }
+
+
+.header {
+       display: flex;
+} 
+
+.menulist .header_menu_btn:not(:checked) ~ .header_nav{
+    display: none;
+}
+.menulist .header_menu_btn:checked ~ .header_nav {
+    display : block;
+}
+
+}
+
